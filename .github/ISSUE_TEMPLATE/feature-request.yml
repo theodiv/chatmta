@@ -1,0 +1,72 @@
+name: Request a feature
+description: Propose a new capability for ChatMTA.
+title: "feat: <short description>"
+labels: [feat, triage]
+body:
+  - type: checkboxes
+    id: preflight-checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: >-
+            The feature is not already proposed in
+            [open issues](https://github.com/theodiv/chatmta/issues?q=is:issue+state:open).
+          required: true
+        - label: >-
+            The feature fits the project's scope: accepting mail through the
+            `sendmail` and `mail` command lines and `-bs` SMTP sessions, keeping
+            it in an on-disk outbox, and handing it by rules to platform plugins
+            for delivery to chat.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: ChatMTA version
+      description: Output of `pip show chatmta`.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem statement
+      description: The capability gap, then what it costs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+      description: >-
+        The behavior the feature should have, in prose; no code or
+        configuration blocks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+      description: The workaround in use and its limitation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Specifications or comparable tools.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-intent
+    attributes:
+      label: Contribution intent
+      options:
+        - label: >-
+            A pull request implementing this feature is planned or already
+            in progress.
+          required: false
