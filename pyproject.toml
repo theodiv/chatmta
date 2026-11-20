@@ -30,6 +30,7 @@ classifiers = [
   "Topic :: Communications :: Email :: Mail Transport Agents",
   "Topic :: System :: Monitoring",
   "Topic :: System :: Systems Administration",
+  "Typing :: Typed",
 ]
 dependencies = []
 dynamic = ["version"]
@@ -37,6 +38,7 @@ dynamic = ["version"]
 [project.urls]
 "Bug Tracker" = "https://github.com/theodiv/chatmta/issues"
 Changelog = "https://github.com/theodiv/chatmta/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/theodiv/chatmta/tree/main/docs"
 Repository = "https://github.com/theodiv/chatmta"
 
 [dependency-groups]
