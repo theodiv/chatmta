@@ -6,3 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Added
+
+- Add the plugin API, `API_VERSION` 1: a plugin validates a destination's
+  options, renders each mail into parts, and delivers them one at a time,
+  reporting sent, retry later, failed, moved, or credential unavailable.
