@@ -14,6 +14,13 @@ Pre-release: ChatMTA is in development and nothing is published. The first
 release is `0.1.0`; the [changelog](https://github.com/theodiv/chatmta/blob/main/CHANGELOG.md)
 records every change until then.
 
+## Documentation
+
+- [Library](https://github.com/theodiv/chatmta/blob/main/docs/library.md) —
+  every public name, with its parameters, return value, and exceptions.
+- [Compatibility](https://github.com/theodiv/chatmta/blob/main/docs/compatibility.md) —
+  what a release may change, and what stays stable.
+
 ## Contributing
 
 Development setup, coding standards, and the pull request process are documented
